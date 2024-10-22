@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
-Theme Name:  Elito - Creative Portfolio HTML5 Template
+Theme Name:     Portio | Personal Portfolio Resume Template
 Version:        1.0.0
 -------------------------------------------------------------------*/
 
@@ -10,44 +10,73 @@ Version:        1.0.0
 ----------------------------------------------------------------
 
 1. General
-   1.1 Theme Reset Style
-   1.2 Global Elements
+	1.1 Theme Reset Style
+	1.2 Global Elements
 
 2. header
-   2.1 topbar
-   2.2 navigation
-
+	
 3. content
-   3.1 wpo-hero-slider
-   3.2 wpo-about-area
-   3.3 wpo-service-area
-   3.4 wpo-work-area
-   3.5 wpo-project-area
-   3.6 wpo-testimonial-section
-   3.7 wpo-pricing-section
-   3.8 wpo-blog-section
+	3.1 hero-section
+	3.2 funfact-section
+	3.3 about-section
+	3.4 resume-section
+	3.5 service-section
+	3.6 portfolio-section
+	3.7 testimonial-section
+	3.8 pricing-section
+	3.9 contact-section
 
-4. wpo-footer
+4. footer-section
 
 5. Home-style-2
-   5.1 wpo-about-area-s2
-   5.2 wpo-service-area-s2
-   5.3 wpo-work-area-s2
-   5.4 partners-section
+	5.1 about-section-s2 
+	5.2 resume-section-s2  
+	5.3 skill-section 
+	5.4 service-section-s2 
+	5.5 portfolio-section-s2
+	5.6 testimonial-section-s2
+	5.7 pricing-section-s2
+	5.8 contact-section-s2
 
-6. wpo-service-single
+6. Home-style-3
+	6.1 about-section-s3
+	6.2 service-section-s3
+	6.3 portfolio-section-s3
+	5.4 testimonial-section-s3
+	6.5 blog-section
 
-7. wpo-protfolio-area
+7. Home-style-4
+	7.1 skill-section-s2
+	7.2 blog-section-s2
 
-8. wpo-project-single
+8. Home-style-5
+	8.1 feature-section
+	8.2 about-section-s5
+	8.3 portfolio-section-s4
 
-9. wpo-blog-pg-section
+9. Home-style-6
+	9.1 trail-section 
+	9.2 about-section-s6
+	9.3 video-section 
+	9.4 service-section-s4
+	9.5 feature-section-s2
 
-10. wpo-blog-single-section
+10. Home-style-7
+	10.1 feature-section-s3
+	10.2 about-section-s7
+	10.3 portfolio-section-s7
 
-11. wpo-contact-pg-section
+11. service-single-page
 
-12. error-404-section
+12. project-single-page
+
+13. blog-page-section
+
+14. blog-single-page
+
+15. contact-page-section
+
+16. error-page-section
 
 
 ----------------------------------------------------------------*/
@@ -55,57 +84,44 @@ Version:        1.0.0
 
 /*------------------------------------------------------------------
 1. General
-----------------------------------------------------------------*/
+----------------------------------------------------------------*/   
+
 
 // helpers
 @import "helpers/variables";
-@import "helpers/functions";
-@import "helpers/mixins";
 
 // base
 @import "base/base";
 
-
 // components
-@import "components/section-title";
-@import "components/buttons";
-@import "components/form";
-@import "components/social-links";
-@import "components/page-title";
-@import "components/preloader";
-@import "components/blog-sidebar";
-@import "components/shop-sidebar";
-@import "components/pagination";
+@import "compunents/section-top-content";
+@import "compunents/preloader";
+@import "compunents/buttom";
+@import "compunents/breadcrumb";
+@import "compunents/service-sidebar";
+@import "compunents/blog-sidebar";
+@import "compunents/_project-sidebar";
 
 // layout
 @import "layout/header";
-@import "layout/hero-slider";
+@import "layout/hero";
 @import "layout/footer";
 
-// components
-@import "components/sticky-header";
 
 
 // page
 @import "page/home-default";
 @import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/home-style-4";
+@import "page/home-style-5";
+@import "page/home-style-6";
+@import "page/home-style-7";
 
+@import "page/service-single";
+@import "page/project-single";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/contact";
 
-
-@import "page/_service-single";
-
-@import "page/_portfolio";
-
-@import "page/_portfolio-single";
-
-@import "page/_blog";
-
-@import "page/_blog-single";
-
-@import "page/_contact";
-
-@import "page/_error-404";
-
-
-
-
+@import "page/error-404";
